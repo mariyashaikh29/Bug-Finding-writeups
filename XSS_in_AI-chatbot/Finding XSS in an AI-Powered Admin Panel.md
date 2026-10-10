@@ -16,7 +16,7 @@ At first glance, that looks like the application did its job. No popup, no visib
 
 But a blank response isn't the same as a blocked request. If the input had actually been rejected, I'd expect either an error message, a filtered/sanitized echo of what I typed, or no response at all because the request never went through. A genuinely blank response from something that's supposed to answer you is its own kind of signal. It means the input reached the backend and something happened with it, just not something visible yet.
 
-![Payload entered into the admin chatbot, initial blank response](/ss1.png)
+![Payload entered into the admin chatbot, initial blank response](ss1.png)
 
 ## Reading Between the Lines
 
