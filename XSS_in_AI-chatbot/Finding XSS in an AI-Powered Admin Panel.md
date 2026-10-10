@@ -16,7 +16,7 @@ At first glance, that looks like the application did its job. No popup, no visib
 
 But a blank response isn't the same as a blocked request. If the input had actually been rejected, I'd expect either an error message, a filtered/sanitized echo of what I typed, or no response at all because the request never went through. A genuinely blank response from something that's supposed to answer you is its own kind of signal. It means the input reached the backend and something happened with it, just not something visible yet.
 
-![Payload entered into the admin chatbot, initial blank response](images/payload-input.png)
+![Payload entered into the admin chatbot, initial blank response](XSS_in_AI-chatbot/ss1.png)
 
 ## Reading Between the Lines
 
@@ -32,7 +32,7 @@ That's when the alert executed.
 
 The chatbot repeating my own input back to me was enough to trigger the script. What looked like a dead end on the first attempt turned out to be a textbook case of reflected (and potentially stored, depending on how the conversation history was handled) cross-site scripting, sitting inside an AI feature that admins were expected to trust completely.
 
-![Alert box firing after the chatbot echoed the payload back](images/alert-executed.png)
+![Alert box firing after the chatbot echoed the payload back](XSS_in_AI-chatbot/ss2.png)
 
 ## Why This Matters
 
