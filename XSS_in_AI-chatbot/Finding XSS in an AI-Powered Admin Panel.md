@@ -32,7 +32,7 @@ That's when the alert executed.
 
 The chatbot repeating my own input back to me was enough to trigger the script. What looked like a dead end on the first attempt turned out to be a textbook case of reflected (and potentially stored, depending on how the conversation history was handled) cross-site scripting, sitting inside an AI feature that admins were expected to trust completely.
 
-![Alert box firing after the chatbot echoed the payload back](XSS_in_AI-chatbot/ss2.png)
+![Alert box firing after the chatbot echoed the payload back](ss2.png)
 
 ## Why This Matters
 
