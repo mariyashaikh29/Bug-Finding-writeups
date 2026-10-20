@@ -38,6 +38,8 @@ And this time, it returned a much longer block of instruction-like content.
 
 I captured the response in a screenshot for documentation.
 
+!(screenshot.png)
+
 What made this interesting was not merely that the chatbot answered an unusual question. It was that the assistant appeared to comply with a request to disclose instructions that were not necessarily intended for ordinary users.
 
 This raised a potential **system-prompt disclosure issue associated with prompt injection**.
